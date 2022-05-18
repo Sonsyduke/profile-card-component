@@ -1,0 +1,226 @@
+/* VARIABLES */
+:root {
+  /* PRIMARY COLORS */
+  --dark-cyan: hsl(185, 75%, 39%);
+  --desatured-blue: hsl(229, 23%, 23%);
+  --grayish-blue: hsl(227, 10%, 46%);
+
+  /* NEUTRAL */
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+/* CSS RESET */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* GENERAL STYLING */
+body {
+  background-color: var(--dark-cyan);
+  font-family: "Kumbh Sans", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#top-pattern {
+  position: absolute;
+  top: -300px;
+  z-index: -99;
+  width: 50%;
+}
+
+#bottom-pattern {
+  position: absolute;
+  bottom: -300px;
+  right: 0;
+  z-index: -99;
+  width: 50%;
+}
+
+.main-card {
+  width: 25%;
+  height: 60%;
+  background-color: white;
+  border-radius: 0.8rem;
+  margin: 100px auto;
+  position: relative;
+  text-align: center;
+}
+
+.top-section,
+#card-pattern {
+  width: 100%;
+}
+
+#card-pattern {
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+
+#victor {
+  display: block;
+  border-block: 3px solid white;
+  border-radius: 50%;
+  margin: -60px auto 0;
+}
+
+.name {
+  color: var(--dark-gray);
+  margin-top: 1rem;
+}
+
+.name span {
+  font-weight: 700;
+  color: black;
+}
+
+.location {
+  color: var(--dark-gray);
+  margin: 0.7rem 0;
+  font-size: 0.9rem;
+}
+
+.bottom-section {
+  border-top: 2px solid rgb(236, 236, 236);
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px auto 0 auto;
+  width: 80%;
+}
+
+.numbers {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.desc {
+  color: var(--dark-gray);
+}
+
+@media (max-width: 700px) {
+  .main-card {
+    width: 60%;
+    height: 70%;
+  }
+}
